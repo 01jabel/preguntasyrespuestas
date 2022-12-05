@@ -1,0 +1,17 @@
+.list-group-item {
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    float: right;
+}
+
+.material-symbols-outlined.incorrect {
+    color: #da2d2d;
+    
+}
+
+.material-symbols-outlined.correct {
+    color: #17a2b8;
+    font-size: 18px;
+}
