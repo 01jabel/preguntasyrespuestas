@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Pregunta } from 'src/app/models/pregunta';
+import { PreguntaService } from 'src/app/services/pregunta.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-respuesta',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./respuesta.component.css']
 })
 export class RespuestaComponent implements OnInit {
+  listPreguntas: Pregunta[];
+  respuestasUsuario: any[];
 
-  constructor() { }
+  constructor(private preguntaService: PreguntaService, private router: Router) { }
 
   ngOnInit(): void {
+    this.listPreguntas = this.preguntaService.preguntas;
+    this.respuestasUsuario = this.preguntaService.respuestasUsuario;
+  }
+
+  volver(){
+    this.preguntaService.respuestasUsuario = [];
+    this.router.navigate(['/']);
   }
 
 }

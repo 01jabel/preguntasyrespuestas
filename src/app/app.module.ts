@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +8,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PreguntaComponent } from './components/pregunta/pregunta.component';
 import { RespuestaComponent } from './components/respuesta/respuesta.component';
 import { BotoneraComponent } from './components/pregunta/botonera/botonera.component';
-
 
 @NgModule({
   declarations: [

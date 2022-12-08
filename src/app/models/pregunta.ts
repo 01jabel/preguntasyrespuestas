@@ -1,11 +1,11 @@
-import { Respuesta } from "./respuesta";
+import { Respuesta } from './respuesta';
 
 export class Pregunta {
-    descripcionPregunta!: string;
-    respuestas!: Respuesta[];
+    descripcionPregunta: string;
+    respuestas: Respuesta[];
 
-    public(descripcionPregunta: string, respuestas: Respuesta[]) {
-        this.descripcionPregunta = descripcionPregunta;
+    constructor(descripcionRespuesta: string, respuestas: Respuesta[]) {
+        this.descripcionPregunta = descripcionRespuesta;
         this.respuestas = respuestas;
     }
 }

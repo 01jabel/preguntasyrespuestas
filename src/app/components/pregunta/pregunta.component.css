@@ -1,17 +1,14 @@
 .list-group-item {
     cursor: pointer;
 }
-
-.material-symbols-outlined {
+.badge {
     float: right;
 }
-
-.material-symbols-outlined.incorrect {
+.material-icons.incorrect {
     color: #da2d2d;
-    
+    font-size: 18px;
 }
-
-.material-symbols-outlined.correct {
+.material-icons.correct {
     color: #17a2b8;
     font-size: 18px;
 }

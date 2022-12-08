@@ -1,10 +1,9 @@
 export class Respuesta {
-    nombre!: string;
-    esCorrecta!: number;
+    nombre: string;
+    esCorrecta: number;
 
-    public(nombre: string, esCorrecta: number) {
+    constructor(nombre: string, esCorrecta: number) {
         this.nombre = nombre;
         this.esCorrecta = esCorrecta;
     }
-
 }
